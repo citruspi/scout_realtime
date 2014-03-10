@@ -261,6 +261,7 @@ The daemon fetches key metrics from you server, stores them in memory, and rende
 
   <h3>Can multiple people view the realtime stats?</h3>
   Yes. Open a port in your firewall instead of using the SSH tunnel:
+  <br><div class="terminal">ssh -NL 5555:localhost:5555 user@ip_or_hostname</div>
 
   <h3>The SSH tunnel is a pain. Is there a way to set up persistent access?</h3>
   Yes, just open a port in your firewall using the iptables command:
