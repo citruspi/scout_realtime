@@ -261,11 +261,11 @@ The daemon fetches key metrics from you server, stores them in memory, and rende
 
   <h3>Can multiple people view the realtime stats?</h3>
   Yes. Open a port in your firewall instead of using the SSH tunnel:
-  <br><div class="terminal">sudo iptables -A INPUT -p tcp --dport 5555 -j ACCEPT</div>
 
   <h3>The SSH tunnel is a pain. Is there a way to set up persistent access?</h3>
-  Yes, just open a port in your firewall using the iptables command above.
-
+  Yes, just open a port in your firewall using the iptables command:
+  <br><div class="terminal">sudo iptables -A INPUT -p tcp --dport 5555 -j ACCEPT</div>
+  
   <h3>Can I specify a different port to run it on?</h3>
   Yes. <div class="terminal">scout_realtime help</div> for options.
 
